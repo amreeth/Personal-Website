@@ -381,8 +381,18 @@ section .title::after{
     padding: 50px 0;
 } */
 /* .gallery img{
-    max-width: 80%;
+    max-width: 70%;
 } */
+
+.div-cus{
+    width: 100%;
+      display: flex;
+      justify-content: center;
+    padding: 2% 0;
+}
+.div-cus img{
+    width: 75%;
+}
 
 
 
