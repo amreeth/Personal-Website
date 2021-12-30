@@ -55,7 +55,7 @@
             <h2 class="title">About me</h2>
             <div class="about-content">
                 <div class="column left">
-                    <img src="images/personal.jpg" alt="">
+                    <img src="images/new.jpg" alt="">
                 </div>
                 <div class="column right">
                     <div class="text">I'm Amreeth and I'm a <span class="typing-2"></span></div>
@@ -234,23 +234,23 @@
                     <div class="text">Message me</div>
                     <form id="submit-form" action="">
                         <div class="fields">
-                            <div class="field name">
+                            <div class="field name " style="margin-top: 30px;">
                                 <input type="text" name="name" placeholder="Name" id="name" onkeyup="nameValidate()" required>
                                 <br>
                                 <div id="errormsg"></div>
                             </div>
                             <div id="errormsg"></div>
                             
-                            <div class="field email ">
+                            <div class="field email " style="margin-top: 30px;">
                                 <input type="email" name="email"  id="email" placeholder="Email" onkeyup="emailvalidate()" required>
                             </div>
                             <div id="errormsg1"> </div>
                         </div>
-                        <div class="field ">
+                        <div class="field " style="margin-top: 30px;">
                             <input type="number"  name="subject" id="number" placeholder="Mobile" onkeyup="mobileValidate()">
                         </div>
                         <div id="errormsg2"> </div>
-                        <div class="field textarea">
+                        <div class="field textarea" style="margin-top: 30px;">
                             <textarea cols="30" rows="10" input type="message" name="message" id="msg"  placeholder="Message.." ></textarea>
                         </div>
                         <div class="button-area">
@@ -299,7 +299,7 @@
         
         function nameValidate(){
           var varname = $('#name').val();
-          var pattern = /[a-zA-Z\s]+/;
+          var pattern = /[a-zA-Z\\s]/;
         
           if(varname==" "){
             $('#errormsg').html("Name is mandatory");
